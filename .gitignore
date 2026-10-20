@@ -1,0 +1,7 @@
+*.vcd
+*.vvp
+a.out
+db/
+incremental_db/
+output_files/
+*.qpf
