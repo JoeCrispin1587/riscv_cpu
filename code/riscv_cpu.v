@@ -6,9 +6,9 @@ module riscv_cpu (
     output [31:0] PC,
     input  [31:0] Instr,
     output        MemWrite,
-    output [31:0] Mem_WrAddr, Mem_WrData,
+    output [31:0] Mem_WrAddr, Mem_WrData, // ALUResult and WriteData from the diagram
     input  [31:0] ReadData,
-    output [31:0] Result
+    output [31:0] Result // wire but output in boilerplate
 );
 
 wire        ALUSrc, RegWrite, Jump, Zero;
